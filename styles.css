@@ -1,0 +1,315 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+body
+{
+    font-family: monospace;
+
+
+}
+nav
+{
+    height: 80px;
+    width: 100%;
+    background: #34495e;
+
+}
+nav img
+{
+    border:2px solid #34495e;
+    height:70px
+
+}
+/* styles.css */
+/* ... (autres styles) ... */
+
+#custom-cakes-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.custom-cake {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.custom-cake:hover {
+    transform: scale(1.05);
+}
+
+.custom-cake img {
+    width: 400px;
+    height: auto;
+    border-radius: 8px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.custom-cake:hover img {
+    opacity: 0.8;
+}
+
+label.logo
+{
+font-size: 35px;
+font-weight: bold;
+color: white;
+padding: 0 100px;
+line-height: 80px;
+
+}
+nav ul
+{
+    float: right;
+    margin-right: 40px;
+
+}
+nav li
+{
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+
+}
+nav a
+{
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    padding: 7px 10px;
+    border-radius: 5px;
+}
+a .active,a:hover
+{
+    border: 1px solid white;
+    transition: .5s;
+}
+nav #icon
+{
+    color: white;
+    font-size: 30px;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+@media(max-width:1048px)
+{
+    label.logo
+    {
+        font-size: 32px;
+        padding-left: 60px;
+
+    }
+    nav ul
+    {
+        margin-right: 20px;
+
+    }
+    nav a 
+    {
+        font-size: 17px;
+    }
+}
+@media(max-width:909px)
+{
+    nav #icon
+    {
+        display: block;
+    }
+    nav ul
+    {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2f3640;
+        top:80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav li 
+    {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav a
+    {
+        font-size: 20px;
+
+    }
+    a.active,a:hover
+    {
+        border: none;
+        color: #3498db;
+    }
+    nav ul.show
+    {
+        left: 0;
+
+    }
+}
+
+#c
+{
+    background: url(b3.webp) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+}
+header
+ {
+    background-color:rgb(255, 255, 255);
+    color: #34495e ;
+    text-align: center;
+    padding: 1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-shadow: 0 2px 5px rgba(184, 131, 131, 0.1);
+}
+
+section {
+    margin: 20px;
+    border-radius: 20px;
+    
+}
+
+.product {
+    border: 1px solid beige;
+    padding: 15px;
+    margin: 10px;
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+                box-shadow 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background-color:rgb(195, 223, 240);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+}
+
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+button {
+    cursor: pointer;
+    background-color: #563ce7;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    transition: background-color 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: #cf82b5;
+}
+
+#cart {
+    float: right;
+    width: 30%;
+    background-color: #fff;
+    border: 1px solid #ecf0f1;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#cart h2 {
+    border-bottom: 1px solid #ecf0f1;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    font-size: 2em;
+}
+
+#cart-items {
+    list-style: none;
+    padding: 0;
+}
+
+#cart-items li {
+    margin: 15px 0;
+    padding: 15px;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#cart-items li:hover {
+    background-color: #d2d7db;
+}
+
+#total {
+    font-weight: bold;
+    margin-top: 15px;
+    font-size: 1.5em;
+    color: #27ae60;
+}
+/* Ajoutez ceci dans votre fichier CSS */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    max-width: 300px;
+}
+
+.footer-section h3 {
+    color: #fff;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icons .icon {
+    margin-right: 10px;
+}
+
+.footer-bottom {
+    background-color: #222;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #ccc;
+    margin: 0;
+}

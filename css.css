@@ -1,0 +1,148 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+body
+{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+h1
+{
+    background-color: black;
+    color: blueviolet;
+    margin: 0;
+    padding: 20px;
+    font-size: 25px;
+
+}
+h2
+{
+    text-align: center;
+    background-color: aquamarine;
+    border-radius: 5px solid ;
+    font-size: 24px;
+    color: #333;
+
+}
+.produit
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;margin: 20px 0;
+
+    
+}
+.produits
+{
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 30%;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.produits img
+{
+    max-width: 100%;
+}
+.im
+{
+    max-width:1200px;
+}
+.price
+{
+    font-weight: bold;
+    color: #ffca28;
+}
+.add-to-cart
+{
+    background-color: #ffca28;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+
+}
+.add-to-cart:hover
+{
+    background-color: #ffaf00;
+
+}
+#cart
+{
+    text-align: left;
+    font-size: 18px;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 5px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+}
+#cart li
+{
+    list-style: none;
+    margin-bottom: 10px;
+}
+#cart-total
+{
+    font-weight: bold;
+    color: #ffca28;
+}
+.c1
+{
+    color: olivedrab;
+    border-radius: 5px solid;
+}
+nav
+{
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0%;
+    background-color: black;
+}
+ul.menu
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    overflow: hidden;
+}
+ul.menu li
+{
+    float: left;
+}
+ul.menu li a
+{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+ul.menu li a:hover
+{
+    background-color: #555;
+
+}
+form
+{
+    background-color: #f3bcbc;
+    border-radius: 0px;
+    
+}
+

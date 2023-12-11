@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <img src="logo.avif" width="98px" >
+        <label  class="logo">cake shop</label>
+        <ul>
+            <li><a class="active" href="index.html">menu</a></li>
+            <li><a href="produit.html">cake personalise</a></li>
+            <li><a href="cart.html">votre panier</a></li>
+            <li><a href="espace.html">espace emplye</a></li>
+        </ul>
+        <label id="icon">
+            <i class="fas fa-bars"></i>
+        </label>
+    </nav>
+
+    <section id="cart">
+        <h2>Panier</h2>
+        <ul id="cart-items"></ul>
+        <p id="total">Total: $0.00</p>
+
+        <h2>Informations de Paiement</h2>
+        <form id="checkout-form">
+            <label for="name">Nom:</label>
+            <input type="text" id="name" name="name" required></br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required></br>
+
+            <label for="card-number">Numéro de Carte:</label>
+            <input type="text" id="card-number" name="card-number" required></br>
+
+            <button type="submit"><a href="checkout.html">payer</a></button>
+        </form>
+    </section>
+
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
+

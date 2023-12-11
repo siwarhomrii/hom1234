@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" ></script>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        $(document).ready(function(){
+            $('#icon').click(function(){
+                $('ul').toggleClass('show');
+        });
+
+
+        });
+    </script>
+</head>
+<body>
+    <nav>
+        <img src="logo.avif" width="98px" >
+        <label  class="logo">cake shop</label>
+        <ul>
+            <li><a class="active" href="index.html">menu</a></li>
+            <li><a href="">cake personalise</a></li>
+            <li><a href="cart.html">votre panier</a></li>
+            <li><a href="espace.html">espace employe</a></li>
+        </ul>
+        <label id="icon">
+            <i class="fas fa-bars"></i>
+        </label>
+    </nav>
+
+    <section id="c">
+        
+    </section>
+</body>
+</html>

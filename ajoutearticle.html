@@ -1,0 +1,82 @@
+<!-- ajoutearticle.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajouter un Article</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Assurez-vous que votre fichier de style CSS est correctement lié -->
+</head>
+<body>
+<nav>
+            <img src="logo.avif" width="98px" >
+            <label  class="logo">cake shop</label>
+            <ul>
+                <li><a class="active" href="index.html">menu</a></li>
+                <li><a href="">cake personalise</a></li>
+                <li><a href="cart.html">votre panier</a></li>
+                <li><a href="espace.html">espace employe</a></li>
+            </ul>
+            <label id="icon">
+                <i class="fas fa-bars"></i>
+            </label>
+        </nav>
+<header>        <h1>Ajouter un Nouvel Article</h1>
+</header>
+    
+    <main>
+        <section>
+            <h2>Formulaire d'Ajout d'Article</h2>
+            <form id="add-product-form" method="post">
+                <label for="productName">Nom du Produit :</label>
+                <input type="text" id="productName" name="productName" required>
+
+                <label for="productDescription">Description du Produit :</label>
+                <textarea id="productDescription" name="productDescription" required></textarea>
+
+                <label for="productPrice">Prix du Produit :</label>
+                <input type="number" id="productPrice" name="productPrice" step="0.01" required>
+
+                <button type="submit" onclick="addProduct()">Ajouter l'Article</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h3>À propos de nous</h3>
+                    <p>Nous sommes dédiés à la création de délices personnalisés pour chaque occasion. Notre équipe de pâtissiers talentueux travaille avec passion pour satisfaire vos papilles.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p><strong>Adresse:</strong> 123 Rue de la Pâtisserie, Ville Gourmande</p>
+                    <p><strong>Téléphone:</strong> +1 234 567 890</p>
+                    <p><strong>Email:</strong> shopcakepatisserie@.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Liens rapides</h3>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="produit.html">Personnaliser</a></li>
+                        <li><a href="cart.html">votre panier</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Suivez-nous</h3>
+                    <div class="social-icons">
+                        <a href="#" class="icon"><img src="facebook-icon.png" alt="Facebook"></a>
+                        <a href="#" class="icon"><img src="twitter-icon.png" alt="Twitter"></a>
+                        <a href="#" class="icon"><img src="instagram-icon.png" alt="Instagram"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Votre Pâtisserie. Tous droits réservés.</p>
+            </div>
+        </footer><!-- Ajoutez ici le contenu de votre pied de page (copyright, liens supplémentaires, etc.) -->
+    </footer>
+    <script src="ajout.js"></script> <!-- Assurez-vous que votre fichier JavaScript est correctement lié -->
+</body>
+</html>
